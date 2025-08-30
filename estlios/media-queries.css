@@ -1,0 +1,78 @@
+@media (max-width: 768px) {
+    /* Empilha os elementos do container (antes lado a lado) em coluna, centraliza e define espaçamento vertical. */
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 170px;
+    }
+
+    /* Faz caixas e seções ficarem fluídas: usa 90% da largura da tela, mas limita para no máximo 500px.
+       height: auto evita cortes de conteúdo em relação às alturas fixas usadas no desktop. */
+    .caixa01,
+    .caixa02,
+    section,
+    .container-contato {
+        width: 90%;
+        max-width: 500px;
+        height: auto;
+        margin: 0 auto; /* centraliza horizontalmente */
+    }
+
+    /* Reduz o título para caber melhor no mobile e diminui padding para economizar espaço vertical. */
+    h1 {
+        font-size: 28px;
+        padding: 20px;
+    }
+
+    /* Torna o menu horizontal em vertical (itens empilhados) para mobile. */
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajusta tamanho e espaçamento dos itens do menu para leitura no celular. */
+    ul li {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    /* Empilha os cards do portfólio (antes em linha), ficando um por vez na coluna. */
+    .port-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajusta a área do portfólio para caber melhor em telas pequenas. */
+    .port {
+        width: 430px;
+        height: auto;
+    }
+
+    /* Deixa cada card mais estreito no mobile (90% da largura do pai, limitado a 300px). */
+    .card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    /* Ajuste do formulário: largura fixa menor para combinar com o layout mobile.*/
+    .contato {
+        width: 450px;
+    }
+
+    /* Container da área de contato — aqui também usa 450px. */
+    .container-contato {
+        width: 450px;
+        border-radius: 30px;
+    }
+
+    /* Mostra o botão hamburger no mobile (estava oculto no CSS base). */
+    #menu-btn {
+        display: block;
+        text-align: center;
+    }
+
+    /* Centraliza o conteúdo do menu quando exibido no mobile. */
+    #menu {
+        text-align: center;
+    }
+}

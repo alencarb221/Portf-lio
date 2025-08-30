@@ -1,0 +1,304 @@
+/* Resetando margens e espaçamentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Definindo um fundo em degradê para a página */
+body {
+    background-image: linear-gradient(to top, white, rgb(63, 63, 158));
+}
+
+/* Cabeçalho com cor de fundo */
+header {
+    background-color: rgba(15, 52, 119, 0.76);
+}
+
+/* Estilização do título principal */
+h1 {
+    text-align: center;
+    padding: 50px;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Cor do título muda ao passar o mouse */
+h1:hover {
+    color: red;
+}
+
+/* Cor padrão para o span (destacar texto) */
+span {
+    color: white;
+}
+
+/* Botão do menu (hambúrguer), inicialmente escondido */
+#menu-btn{
+  display: none;
+  font-size: 22px;
+  background: rgba(0, 0, 0, 0.253);
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  text-align: center;
+  display: none; /* repetido, pode remover */
+}
+
+/* Menu em lista exibido lado a lado */
+ul {
+    display: flex;
+}
+
+/* Estilo dos itens da lista do menu */
+li {
+    list-style-type: none;
+    margin: 10px;
+    padding-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    margin: auto;
+}
+
+/* Links do menu */
+li > a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    text-shadow: 5px 5px 5px black;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito hover no menu */
+li > a:hover {
+    color: crimson;
+    transform: translate(5px, -5px);
+}
+
+/* Container usado para organizar elementos lado a lado */
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Título da página */
+.titulo-page01 {
+    font-size: 45px;
+    color: white;
+}
+
+/* Caixa de texto principal */
+.caixa01 {
+    border: 1px solid black;
+    width: 650px;
+    height: 550px;
+    font-size: 23px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    text-indent: 20px;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    background-color: rgba(129, 110, 110, 0.733);
+    color: white;
+    box-shadow: 8px 8px 8px black;
+}
+
+/* Caixa de texto secundária */
+.caixa02 {
+    border: 1px solid black;
+    width: 600px;
+    height: 300px;
+    font-size: 23px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    text-indent: 20px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    background-color: rgba(129, 110, 110, 0.733);
+    color: white;
+    box-shadow: 8px 8px 8px black;
+    position: relative; /* reposiciona dentro do fluxo */
+    bottom: 140px; /* desloca para cima */
+}
+
+/* Estilo geral das seções */
+section {
+    border: 1px solid black;
+    width: 600px;
+    height: 800px;
+    font-size: 23px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    text-indent: 20px;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    background-color: rgba(129, 110, 110, 0.733);
+    color: white;
+    box-shadow: 8px 8px 8px black;
+}
+
+/* Títulos secundários */
+h2 {
+    text-align: center;
+    padding: 20px;
+    text-shadow: 5px 5px 7px black;
+}
+
+/* Títulos de projetos/cards */
+h3 {
+    padding: 20px;
+    font-size: 32px;
+    color: black;
+    font-style: italic;
+}
+
+/* Área de descrição do portfólio */
+.port {
+   height: 350px;
+   width: 700px;
+} 
+
+/* Texto dentro do portfólio */
+.port > p {
+    font-style: italic;
+}
+
+/* Container dos cards do portfólio */
+.port-cards {
+    display: flex;
+    padding: 30px;
+}
+
+/* Estilo dos cards */
+.card {
+  border-radius: 15px;
+  padding: 30px;
+  margin: 15px;
+  background: white;
+  color: black;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.74);
+  font-style: italic;
+  text-align: center;
+}
+
+/* Links dos cards */
+.port-cards > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Efeito hover nos cards */
+.card:hover {
+    transform: translate(5px, -5px);
+}
+
+/* Container da área de contato */
+.container-contato {
+    border: 1px solid black;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    background-image: url(../Imagem/hamburg.jpg);
+}
+
+/* Caixa de formulário de contato */
+.contato {
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 500px;
+    height: 650px;
+    /* margin: auto;  <-- comentado */
+    color: white;
+    text-align: center;
+    background-color: rgb(179, 175, 175);
+    box-shadow: 7px 7px 7px black;
+}
+
+/* Título dentro do formulário */
+.contato > h2 {
+    font-size: 35px;
+}
+
+/* Estilo dos rótulos do formulário */
+label {
+    font-size: 28px;
+}
+
+/* Campos de entrada */
+input {
+    width: 97%;
+    height: 33px;
+    background-color: rgb(82, 77, 77);
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+/* Efeito ao focar nos inputs */
+input:focus {
+    background-color: white;
+    color: black;
+}
+
+/* Área de texto da mensagem */
+textarea {
+    width: 97%;
+    height: 200px;
+    resize: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgb(82, 77, 77);
+}
+
+/* Efeito ao focar no textarea */
+textarea:focus {
+    background-color: white;
+    color: black;
+}
+
+/* Botão de enviar */
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: darkblue;
+    color: white;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+/* Efeito hover no botão */
+button:hover {
+    background-color: rgba(0, 0, 139, 0.473);
+    box-shadow: 5px 5px 5px black;
+}
+
+/* Rodapé do site */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: darkslategray;
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}

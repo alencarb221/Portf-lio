@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade em dispositivos móveis -->
+    <title>Contato</title> <!-- Título da página -->
+    
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="../estlios/style.css">
+    
+    <!-- CSS com media queries para responsividade -->
+    <link rel="stylesheet" href="../estlios/media-queries.css">
+    
+    <!-- Google Material Icons para ícones, como o menu hamburger -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Título do site -->
+        <h1><span>Código</span> & Criação</h1>
+
+        <!-- Ícone do menu hamburger com evento onclick -->
+        
+        <span class="material-icons" id="menu-btn" onclick="toqueMenu()">menu</span>
+
+        <!-- Menu de navegação -->
+        <nav id="menu">
+            <ul>
+                <!-- Links de navegação -->
+                <li><a href="eu.html">Quem sou eu</a></li>
+                <li><a href="formação.html">Minha formação</a></li>
+                <li><a href="port.html">Portfólio</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <!-- Container principal da página de contato -->
+    <div class="container-contato">
+        <div class="contato">
+            <h2>Contato</h2>
+
+            <!-- Formulário de contato -->
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" name="" id=""><br><br> 
+
+                <label for="email">Email:</label>
+                <input type="email" name="" id=""><br><br>
+
+                <label for="tel">WhatsApp:</label>
+                <input type="number" name="" id=""><br><br>
+
+                <textarea name="" placeholder="Deixe sua mensagem"></textarea>
+            </form>
+
+            <!-- Botão de envio -->
+            
+            <br><br>
+            <button type="button">Enviar</button>
+        </div>
+
+    </div>
+
+    <!-- Rodapé do site -->
+    <footer>
+        Site criado e desenvolvido por <strong>Alencar Baptistel</strong> para a atividade prática da matéria de
+        <strong>Fundamentos da Programação web</strong>
+    </footer>
+
+    <!-- Script JavaScript para menu e função do botão -->
+    <script src="../Script/script.js"></script>
+</body>
+
+</html>

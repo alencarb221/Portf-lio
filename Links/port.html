@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis -->
+    <title>Portfólio</title> <!-- Título da página -->
+    
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="../estlios/style.css">
+    
+    <!-- CSS com media queries para responsividade -->
+    <link rel="stylesheet" href="../estlios/media-queries.css">
+    
+    <!-- Google Material Icons para ícones, como o menu hamburger -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+       <!-- Título do site -->
+       <h1><span>Código</span> & Criação</h1>
+
+       <!-- Ícone do menu hamburger com evento onclick -->
+       
+       <span class="material-icons" id="menu-btn" onclick="toqueMenu()">menu</span>
+
+       <!-- Menu de navegação -->
+       <nav id="menu">
+           <ul>
+               <!-- Links de navegação -->
+               <li><a href="eu.html">Quem sou eu</a></li>
+               <li><a href="formação.html">Minha formação</a></li>
+               <li><a href="#">Portfólio</a></li>
+               <li><a href="contato.html">Contato</a></li>
+           
+       </nav>
+    </header>
+
+    <!-- Seção principal de Portfólio -->
+    <section class="port">
+        <h2>Meus Projetos</h2>
+        <p>
+            Além da minha formação e experiência profissional, tenho me dedicado ao estudo e prática em Análise e
+            Desenvolvimento de Sistemas.
+            Nesta seção compartilho alguns projetos que desenvolvi e publiquei no meu GitHub. Eles representam minha jornada
+            de aprendizado, minha curiosidade por tecnologia e meu desejo de aplicar soluções na prática.
+        </p>
+    </section>
+
+    <!-- Container de cards do portfólio -->
+    <div class="port-cards">
+        <!-- Cada card é um link para o GitHub -->
+        <a href="https://github.com/alencarb221/Trabalho-Faculdade" target="_blank">
+            <div class="card">
+                <h3>Site simples</h3>
+                <p>Site simples criado e desenvolvido usando html, css e um pouco de javascript</p><br> <!-- OBS: <br> para espaçamento, prefira CSS -->
+                <p>Ver no GitHub</p>
+            </div>
+        </a>
+
+        <a href="https://github.com/alencarb221/Calculadora-IMC" target="_blank">
+            <div class="card">
+                <h3>Calculadora IMC</h3>
+                <p>Aplicativo, uma calculadora para calcular o indice de massa corporal. Usado as tecnologias html, css e javascript</p><br>
+                <p>Ver no Github</p>
+            </div>
+        </a>
+
+        <a href="https://github.com/alencarb221/Projeto-login" target="_blank">
+            <div class="card">
+                <h3>Projeto tela de login</h3>
+                <p>Projeto para aprender a usar as medias queries</p><br>
+                <p>Ver no GitHub</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Rodapé do site -->
+    <footer>
+        Site criado e desenvolvido por <strong>Alencar Baptistel</strong> para a atividade prática da matéria de
+        <strong>Fundamentos da Programação web</strong>
+    </footer>
+
+    <!-- Script para o menu hamburger -->
+    <script src="../Script/script.js"></script>
+</body>
+
+</html>
