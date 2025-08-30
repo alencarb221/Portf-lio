@@ -6,6 +6,7 @@
         gap: 170px;
     }
 
+
     /* Faz caixas e seções ficarem fluídas: usa 90% da largura da tela, mas limita para no máximo 500px.
        height: auto evita cortes de conteúdo em relação às alturas fixas usadas no desktop. */
     .caixa01,
@@ -18,11 +19,13 @@
         margin: 0 auto; /* centraliza horizontalmente */
     }
 
+
     /* Reduz o título para caber melhor no mobile e diminui padding para economizar espaço vertical. */
     h1 {
         font-size: 28px;
         padding: 20px;
     }
+
 
     /* Torna o menu horizontal em vertical (itens empilhados) para mobile. */
     ul {
@@ -30,11 +33,13 @@
         align-items: center;
     }
 
+
     /* Ajusta tamanho e espaçamento dos itens do menu para leitura no celular. */
     ul li {
         font-size: 20px;
         margin: 10px 0;
     }
+
 
     /* Empilha os cards do portfólio (antes em linha), ficando um por vez na coluna. */
     .port-cards {
@@ -42,28 +47,33 @@
         align-items: center;
     }
 
+
     /* Ajusta a área do portfólio para caber melhor em telas pequenas. */
     .port {
-        width: 90%;
+        width: 95%;
+        max-width: 430px;
         height: auto;
     }
+
 
     /* Deixa cada card mais estreito no mobile (90% da largura do pai, limitado a 300px). */
     .card {
         width: 90%;
         max-width: 300px;
+        flex-direction: column;
     }
+
 
     /* Ajuste do formulário: largura fixa menor para combinar com o layout mobile.*/
     .contato {
-        width: 97%;
+        width: 100%;
+        max-width: 450px;
     }
 
-    /* Container da área de contato  */
+
+    /* Container da área de contato — aqui também usa 450px. */
     .container-contato {
-        width: 80%;
+        width: 95%;
+        max-width: 450px;
         border-radius: 30px;
-        
     }
-
-   
