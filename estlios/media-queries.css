@@ -56,7 +56,7 @@
     }
 
 
-    /* Deixa cada card mais estreito no mobile (90% da largura do pai, limitado a 300px). */
+    /* Deixa cada card mais estreito no mobile  */
     .card {
         width: 90%;
         max-width: 300px;
@@ -71,9 +71,10 @@
     }
 
 
-    /* Container da área de contato — aqui também usa 450px. */
+   /* Container da área de contato */
     .container-contato {
         width: 95%;
         max-width: 450px;
         border-radius: 30px;
     }
+}
