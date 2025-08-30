@@ -44,7 +44,7 @@
 
     /* Ajusta a área do portfólio para caber melhor em telas pequenas. */
     .port {
-        width: 430px;
+        width: 90%;
         height: auto;
     }
 
@@ -56,23 +56,14 @@
 
     /* Ajuste do formulário: largura fixa menor para combinar com o layout mobile.*/
     .contato {
-        width: 450px;
+        width: 97%;
     }
 
-    /* Container da área de contato — aqui também usa 450px. */
+    /* Container da área de contato  */
     .container-contato {
-        width: 450px;
+        width: 80%;
         border-radius: 30px;
+        
     }
 
-    /* Mostra o botão hamburger no mobile (estava oculto no CSS base). */
-    #menu-btn {
-        display: block;
-        text-align: center;
-    }
-
-    /* Centraliza o conteúdo do menu quando exibido no mobile. */
-    #menu {
-        text-align: center;
-    }
-}
+   

@@ -32,18 +32,7 @@ span {
     color: white;
 }
 
-/* Botão do menu (hambúrguer), inicialmente escondido */
-#menu-btn{
-  display: none;
-  font-size: 22px;
-  background: rgba(0, 0, 0, 0.253);
-  border: none;
-  color: white;
-  cursor: pointer;
-  padding: 5px;
-  text-align: center;
-  display: none; /* repetido, pode remover */
-}
+
 
 /* Menu em lista exibido lado a lado */
 ul {
